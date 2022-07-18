@@ -12,12 +12,12 @@
 
 /* Variables */
 :root {
-  --purple-66: hsl(243, 90%, 66%);
-  --purple-62: hsl(243, 90%, 62%);
-  --gray-100: hsl(0, 0%, 100%);
-  --gray-87: hsl(0, 0%, 87%);
-  --gray-46: hsl(0, 0%, 45%);
-  --gray-20: hsl(0, 0%, 20%);
+  --purpura-66: hsl(243, 90%, 66%);
+  --purpura-62: hsl(243, 90%, 62%);
+  --gris-100: hsl(0, 0%, 100%);
+  --gris-87: hsl(0, 0%, 87%);
+  --gris-46: hsl(0, 0%, 45%);
+  --gris-20: hsl(0, 0%, 20%);
   --regular: 400;
   --medium: 500;
   --bold: 700;
@@ -25,7 +25,7 @@
 }
 
 body {
-  background: var(--purple-66);
+  background: var(--purpura-66);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,15 +33,15 @@ body {
   height: 100vh;
 }
 
-.login {
+.formulario {
   padding: 32px 48px;
   width: 346px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: var(--gray-100);
+  background: var(--gris-100);
 }
 
-.login-container p {
+.formulario-contenedor p {
   font-size: 14px;
   font-weight: var(--regular);
   line-height: 14px;
@@ -49,7 +49,7 @@ body {
   margin-bottom: 8px;
 }
 
-.login-container h1 {
+.formulario-contenedor h1 {
   font-size: 22px;
   font-weight: var(--bold);
   line-height: 22px;
@@ -74,13 +74,13 @@ form label {
   font-size: 14px;
   font-weight: var(--medium);
   line-height: 14px;
-  color: var(--gray-20);
+  color: var(--gris-20);
 }
 
 form input {
   width: 100%;
   height: 45px;
-  border: 1px solid var(--gray-87);
+  border: 1px solid var(--gris-87);
   border-radius: 6px;
   outline: none;
   padding: 0 12px;
@@ -88,17 +88,17 @@ form input {
 }
 
 form input[type=submit] {
-  background: linear-gradient(180deg, var(--purple-62) 0%, var(--purple-66) 100%);
+  background: linear-gradient(180deg, var(--purpura-62) 0%, var(--purpura-66) 100%);
   font-size: 16px;
   font-weight: var(--extrabold);
   line-height: 16px;
-  color: var(--gray-100);
+  color: var(--gris-100);
   cursor: pointer;
-  border: 1px solid var(--purple-66);
+  border: 1px solid var(--purpura-66);
 }
 
 form input[type=submit]:hover {
-  background: var(--purple-66);
+  background: var(--purpura-66);
 }
 
 form span {
@@ -106,13 +106,13 @@ form span {
   font-weight: var(--bold);
   line-height: 12px;
   text-align: center;
-  color: var(--purple-66);
+  color: var(--purpura-66);
   cursor: pointer;
 }
 
-/* Desktop version */
+/* Versión Escritorio */
 @media screen and (min-width: 768px) {
-  .login {
+  .formulario {
     padding: 52px 48px;
     width: 444px;
   }
